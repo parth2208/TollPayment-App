@@ -1,0 +1,2 @@
+# TollPayment-App
+This a an Android based mobile application which basically enables user to have hustle free payment procedure. Apart from that this android mobile application will take care of all your trip history, transactions, help user to manage their vehicles. This app uses firebase for two factor authentication, Room persistence database for storage of the user data. This projects also uses some of the libraries and external resounces for UI design and navigation purposes. 
