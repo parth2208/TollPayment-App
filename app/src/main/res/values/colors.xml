@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="background">#1EAE98</color>
+    <color name="grey">#919090</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="sky_blue">#7ccfa0</color>
+    <color name="red">#e90848</color>
+    <color name="transparent_gradient">#50b7b6b6</color>
+    <color name="card_gradient">#a3035f8f</color>
+    <color name="card_start_gradient">#c11d7cae</color>
+    <color name="card_back_gradient">#b4121d21</color>
+    <color name="card_back_gradient_start">#8b222b30</color>
+
+</resources>

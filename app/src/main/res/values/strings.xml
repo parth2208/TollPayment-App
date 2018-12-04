@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Tollpay</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_menu_home">Home</string>
+    <string name="nav_menu_vehicle">Vehicle</string>
+    <string name="nav_menu_profile">Profile</string>
+    <string name="nav_menu_transaction">Transaction</string>
+    <string name="addVehicle"> Add Vehicle</string>
+    <string name="dialog"> SignOut Dialog</string>
+
+
+    <string-array name="vehicle_type">
+        <item>Select Vehicle Type</item>
+        <item>Car or Jeep or Van</item>
+        <item>Bus/Truck</item>
+        <item>Upto 3 Axle Vehicle</item>
+        <item>4 to 6 Axle</item>
+        <item>HCM/EME</item>
+        <item>7 or More Axle</item>
+    </string-array>
+
+
+    <string-array name="date">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+    </string-array>
+
+    <string-array name="year">
+
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+
+
+
+    //FireBase Text
+
+    <string name="google_status_fmt"> Edit Profile </string>
+    <string name="firebase_status_fmt"> Edit Profile </string>
+    <string name="auth_failed"> Authentication Failed </string>
+
+
+    // Database nodes name
+
+    <string name="db_user"> user </string>
+    <string name="db_user_settings"> user_settings </string>
+
+
+    //FireBase Fields
+    <string name="field_username"> username </string>
+    <string name="field_dispalyName"> display_name </string>
+    <string name="field_email"> email </string>
+    <string name="field_mobileNo"> mobile_no </string>
+
+</resources>

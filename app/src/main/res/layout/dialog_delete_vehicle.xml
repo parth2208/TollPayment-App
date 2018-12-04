@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you want to delete Vehicle?"
+        android:id="@+id/text_confirm"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/dialog_delete_btn"
+        android:textColor="@color/white"
+        android:layout_below="@id/text_confirm"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/delete_btn_background"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:id="@+id/dialog_cancel_btn"
+        android:layout_below="@id/text_confirm"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/vehicle_add_btn_background"
+        android:layout_marginEnd="15dp"
+        android:textSize="18sp" />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<include layout="@layout/layout_top_tabs"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Payment History"-->
+        <!--android:id="@+id/text_history"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="30sp"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginBottom="10dp" />-->
+
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/text_history"-->
+        <!--android:id="@+id/transaction_listView">-->
+
+    <!--</ListView>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<include layout="@layout/layout_bottom_navigation_view"/>-->
+
+    <!--</RelativeLayout>-->
+
+
+
+</RelativeLayout>

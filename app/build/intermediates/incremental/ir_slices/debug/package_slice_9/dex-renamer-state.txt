@@ -1,0 +1,4 @@
+#Wed Nov 28 08:48:49 IST 2018
+base.0=F\:\\AndroidStudioProject\\Tollpay-20181014T194817Z-001\\Tollpay\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex

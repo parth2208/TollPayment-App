@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".PaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_top_tabs"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Make payment"
+        android:textColor="@color/colorPrimary"
+
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_unique_id"
+            android:layout_below="@+id/textView2"
+            android:textColor="@color/black"
+            android:text="Transaction Id :-"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/db_unique_id"
+            android:layout_below="@+id/textView2"
+            android:textColor="@color/black"
+            android:text="DB Id"
+            android:layout_marginTop="20dp"
+            android:layout_alignBaseline="@id/text_unique_id"
+            android:layout_toEndOf="@id/text_unique_id"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            />
+
+
+
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/easy_card_flip"
+            android:layout_below="@id/db_unique_id"
+            android:layout_marginTop="35dp"
+            android:foregroundGravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            app:flipDuration="400"
+            app:flipOnTouch="true"
+            app:flipEnabled="true"
+            app:flipFrom="right"
+            app:flipType="horizontal">
+
+
+            <!--This will backside of the card-->
+
+            <include layout="@layout/card_back_side"/>
+
+
+            <!--This will show front Side of the card-->
+
+            <include layout="@layout/card_front_side"/>
+
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+
+
+   <!--<TextView-->
+       <!--android:layout_width="wrap_content"-->
+       <!--android:layout_height="wrap_content"-->
+       <!--android:id="@+id/textView_card_no"-->
+       <!--android:text="Card Number"-->
+       <!--android:layout_below="@id/text_unique_id"-->
+       <!--android:layout_marginStart="30dp"-->
+       <!--android:layout_marginTop="20dp"-->
+       <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="*"-->
+        <!--android:layout_marginStart="5dp"-->
+        <!--android:textColor="@color/red"-->
+        <!--android:layout_toEndOf="@id/textView_card_no"-->
+        <!--android:layout_alignBaseline="@id/textView_card_no"-->
+        <!--android:textSize="15sp" />-->
+
+
+
+    <!--<android.support.v7.widget.AppCompatEditText-->
+        <!--android:layout_width="300sp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_below="@id/textView_card_no"-->
+        <!--android:inputType="number"-->
+        <!--android:id="@+id/edit_card_no"-->
+        <!--android:background="@drawable/background"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Card Holders Name"-->
+        <!--android:id="@+id/text_holder_name"-->
+        <!--android:layout_below="@id/edit_card_no"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_marginTop="20dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="*"-->
+            <!--android:textColor="@color/red"-->
+            <!--android:layout_toEndOf="@id/text_holder_name"-->
+            <!--android:layout_alignBaseline="@id/text_holder_name"-->
+            <!--android:layout_marginStart="5dp"-->
+            <!--android:textSize="15sp" />-->
+
+    <!--<android.support.v7.widget.AppCompatEditText-->
+        <!--android:layout_width="300sp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_below="@id/text_holder_name"-->
+        <!--android:id="@+id/edit_holder_name"-->
+        <!--android:background="@drawable/background"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="CVN/CVV Number"-->
+        <!--android:id="@+id/text__cvv"-->
+        <!--android:layout_below="@id/edit_holder_name"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_marginTop="20dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="*"-->
+            <!--android:textColor="@color/red"-->
+            <!--android:layout_toEndOf="@id/text__cvv"-->
+            <!--android:layout_alignBaseline="@id/text__cvv"-->
+            <!--android:layout_marginStart="5dp"-->
+            <!--android:textSize="15sp" />-->
+
+
+        <!--<android.support.v7.widget.AppCompatEditText-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginStart="30dp"-->
+            <!--android:inputType="number"-->
+        <!--android:id="@+id/edit_cvv"-->
+            <!--android:layout_below="@id/text__cvv"-->
+        <!--android:background="@drawable/background"/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Expiry Date"-->
+            <!--android:id="@+id/text_expire"-->
+            <!--android:layout_below="@id/edit_cvv"-->
+            <!--android:layout_marginStart="30dp"-->
+            <!--android:layout_marginTop="20dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="*"-->
+            <!--android:textColor="@color/red"-->
+            <!--android:layout_toEndOf="@id/text_expire"-->
+            <!--android:layout_alignBaseline="@id/text_expire"-->
+            <!--android:layout_marginStart="5dp"-->
+            <!--android:textSize="15sp" />-->
+
+
+
+        <!--<android.support.v7.widget.AppCompatSpinner-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:id="@+id/expiry_spinner_month"-->
+            <!--android:layout_below="@id/text_expire"-->
+            <!--android:layout_marginStart="30dp">-->
+
+         <!--</android.support.v7.widget.AppCompatSpinner>-->
+
+
+    <!--<android.support.v7.widget.AppCompatSpinner-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:id="@+id/expiry_spinner_year"-->
+            <!--android:layout_below="@id/text_expire"-->
+            <!--android:layout_alignBaseline="@id/expiry_spinner_month"-->
+            <!--android:layout_toEndOf="@id/expiry_spinner_month"-->
+            <!--android:layout_marginStart="30dp">-->
+
+        <!--</android.support.v7.widget.AppCompatSpinner>-->
+
+        <!--<android.support.v7.widget.AppCompatImageButton-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:id="@+id/next_payment_btn"-->
+            <!--android:layout_below="@id/easy_card_flip"-->
+            <!--android:src="@drawable/ic_next"-->
+            <!--android:background="@drawable/vehicle_add_btn_background"-->
+            <!--android:elevation="20dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--/>-->
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/submit_payment_btn"
+            android:layout_below="@id/easy_card_flip"
+            android:src="@drawable/ic_check"
+            android:background="@drawable/vehicle_add_btn_background"
+            android:elevation="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            />
+
+</RelativeLayout>
+
+
+</RelativeLayout>
